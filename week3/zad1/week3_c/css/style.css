@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+
+input, textarea, select, label {
+    font-size: 20px;
+    max-width: 600px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+button {
+    padding: 10px;
+    background-color: #1d4ce9;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+}
+

@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заданиме 1C</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Средняя температура датчиков</h1>
+    <label for="input">Введите пакет показаний:</label>
+    <br>
+    <textarea id="input" rows="5" cols="50"></textarea>
+    <br>
+    <label for="sort">Выберите поле для сортировки:</label>
+    <br>
+    <select id="sort">
+        <option value="id">ID датчика</option>
+        <option value="temperature">Температура</option>
+    </select>
+    <br>
+    <button onclick="calculateAverage()">Вычислить</button>
+    <div id="output">
+        <h2>Результат:</h2>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
