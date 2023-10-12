@@ -6,11 +6,14 @@
 
 h1 {
     text-align: center;
+    font-family: sans-serif;
 }
 
 label {
     margin-top: 10px;
     font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 input, textarea {
@@ -21,16 +24,31 @@ input, textarea {
 }
 
 button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #1d4ce9;
-    border: 0;
-    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #cf4e17;
+    border: 20;
+    border-color: #a61414;
+    border-radius: 15px;
     color: #fff;
     font-size: 20px;
+    transition: 0.5s;
+    font-weight: bold;
+    
+}
+
+button:focus,
+button:hover {
+    background-color: rgb(244, 178, 78);
+    border-color: rgb(255, 183, 0);
+    box-shadow: 0 0 50px rgba(255, 179, 0, 0.618);
+    color: black;
 }
 
 #outputResult {
     margin-top: 20px;
     font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25;
 }

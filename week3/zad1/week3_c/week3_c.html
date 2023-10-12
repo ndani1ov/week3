@@ -1,27 +1,25 @@
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заданиме 1C</title>
+    <title>week3_c</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <h1>Средняя температура датчиков</h1>
-    <label for="input">Введите пакет показаний:</label>
+    <label for="input">Введите пакет показаний с датчиков</label>
     <br>
     <textarea id="input" rows="5" cols="50"></textarea>
     <br>
-    <label for="sort">Выберите поле для сортировки:</label>
+    <label for="sort">Выберите, что сортировать:</label>
     <br>
     <select id="sort">
-        <option value="id">ID датчика</option>
-        <option value="temperature">Температура</option>
+        <option value="id">id датчика</option>
+        <option value="temperature">температура</option>
     </select>
     <br>
-    <button onclick="calculateAverage()">Вычислить</button>
+    <button onclick="calculateAverage()">Вывод</button>
     <div id="output">
-        <h2>Результат:</h2>
+        <h2>Вывод:</h2>
     </div>
 
     <script src="js/script.js"></script>

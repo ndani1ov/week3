@@ -1,9 +1,38 @@
+const countOccurrences = () => {
+    const searchString = document.getElementById('searchString').value;
+    const inputStrings = document.getElementById('inputStrings').value.split('\n');
+
+    let count = 0;
+    inputStrings.forEach(text => {
+        count += countOccurrencesInString(text, searchString);
+    });
+
+    displayResult(count);
+};
+
+const countOccurrencesInString = (text, searchString) => {
+    let count = 0;
+    let position = text.indexOf(searchString);
+
+    while (position !== -1) {
+        count++;
+        position = text.indexOf(searchString, position + 1);
+    }
+
+    return count;
+};
+
+const displayResult = count => {
+    const outputResult = document.getElementById('outputResult');
+    outputResult.innerText = 'Количество вхождений: ' + count;
+};
+
 const calculateEntropy = () => {
     const inputText = document.getElementById('inputText').value;
     const entropy = calculateShannonEntropy(inputText);
     const formattedEntropy = entropy.toFixed(2);
 
-    displayResult(formattedEntropy);
+    displayEntropyResult(formattedEntropy);
 };
 
 const calculateShannonEntropy = text => {
@@ -24,7 +53,7 @@ const calculateShannonEntropy = text => {
     return entropy;
 };
 
-const displayResult = entropy => {
+const displayEntropyResult = entropy => {
     const outputResult = document.getElementById('outputResult');
     outputResult.innerText = 'Энтропия: ' + entropy;
 };
